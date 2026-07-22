@@ -1,0 +1,13 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Modern Todo application built with HTML, Vanilla CSS, and JavaScript",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx serve ."
+  },
+  "keywords": ["todo", "javascript", "web-app"],
+  "author": "",
+  "license": "MIT"
+}
