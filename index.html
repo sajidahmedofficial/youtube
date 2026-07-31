@@ -1,71 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A sleek, high-performance web todo app with glassmorphism UI, search, filtering, and local storage persistence.">
-  <title>TaskFlow — Modern Todo Application</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="app-container" id="app">
-    <header class="app-header">
-      <h1>TaskFlow</h1>
-      <p>Organize your daily tasks with speed and style</p>
-    </header>
-
-    <!-- Input Form -->
-    <form class="input-section" id="todo-form" action="javascript:void(0);">
-      <div class="input-wrapper">
-        <input 
-          type="text" 
-          id="todo-input" 
-          class="todo-input" 
-          placeholder="What needs to be done?" 
-          autocomplete="off" 
-          required
-        />
-      </div>
-      <button type="submit" id="btn-add" class="btn-add" aria-label="Add Task">
-        <span>Add Task</span>
-      </button>
-    </form>
-
-    <!-- Controls Section: Search & Filters -->
-    <section class="controls-section" aria-label="Task Controls">
-      <div class="search-wrapper">
-        <input 
-          type="search" 
-          id="search-input" 
-          class="search-input" 
-          placeholder="Search tasks..." 
-          aria-label="Search tasks"
-        />
-      </div>
-
-      <div class="filter-tabs" role="tablist" aria-label="Task Filters">
-        <button id="filter-all" class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
-        <button id="filter-active" class="filter-btn" role="tab" aria-selected="false" data-filter="active">Active</button>
-        <button id="filter-completed" class="filter-btn" role="tab" aria-selected="false" data-filter="completed">Completed</button>
-      </div>
-    </section>
-
-    <!-- Todo List -->
-    <ul id="todo-list" class="todo-list" aria-live="polite">
-      <!-- Items dynamically rendered by app.js -->
-    </ul>
-
-    <!-- Footer Stats & Actions -->
-    <footer class="app-footer">
-      <span id="task-counter" class="task-counter">0 tasks remaining</span>
-      <button id="btn-clear-completed" class="btn-clear" aria-label="Clear completed tasks">Clear completed</button>
-    </footer>
-  </main>
-
-  <script type="module" src="src/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Studio Pro - Stream, Watch & Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
